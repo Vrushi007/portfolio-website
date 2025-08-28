@@ -80,10 +80,6 @@ const Certifications = () => {
                   <span className="certification-provider">{cert.provider}</span>
                   <span className="certification-id">{cert.credentialId}</span>
                 </div>
-                <div className="certification-status earned">
-                  <i className="fas fa-check-circle"></i>
-                  <span>Certified</span>
-                </div>
               </div>
               
               <div className="certification-content">
@@ -142,10 +138,6 @@ const Certifications = () => {
                     <div className="certification-badge">
                       <span className="certification-provider">{cert.provider}</span>
                       <span className="certification-id">{cert.credentialId}</span>
-                    </div>
-                    <div className="certification-status upcoming">
-                      <i className="fas fa-clock"></i>
-                      <span>Planned</span>
                     </div>
                   </div>
                   
