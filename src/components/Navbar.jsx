@@ -50,7 +50,7 @@ const Navbar = () => {
           </a>
         </h1>
         <ul>
-          {['home', 'about', 'skills', 'experience', 'contact'].map((section) => (
+          {['home', 'about', 'skills', 'experience', 'projects', 'certifications', 'contact'].map((section) => (
             <li key={section}>
               <a
                 href={`#${section}`}
