@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 
 const Navbar = () => {
-  const [activeSection, setActiveSection] = useState('home')
+  const [activeSection, setActiveSection] = useState('about')
   const [isScrolled, setIsScrolled] = useState(false)
 
   useEffect(() => {
@@ -45,12 +45,12 @@ const Navbar = () => {
     <nav id="navbar" style={{ padding: isScrolled ? '0.5rem 0' : '1rem 0' }}>
       <div className="container">
         <h1 className="logo">
-          <a href="#home" onClick={(e) => { e.preventDefault(); handleNavClick('home') }}>
+          <a href="#about" onClick={(e) => { e.preventDefault(); handleNavClick('about') }}>
             Vrushabh Rajaghatta
           </a>
         </h1>
         <ul>
-          {['home', 'about', 'skills', 'experience', 'projects', 'certifications', 'contact'].map((section) => (
+          {['about', 'skills', 'experience', 'projects', 'certifications', 'contact'].map((section) => (
             <li key={section}>
               <a
                 href={`#${section}`}

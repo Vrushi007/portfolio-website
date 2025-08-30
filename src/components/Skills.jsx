@@ -8,7 +8,7 @@ const Skills = () => {
     },
     {
       title: 'Backend',
-      skills: ['.NET 6', 'C#', 'Python']
+      skills: ['.NET 9', 'C#', 'Python']
     },
     {
       title: 'Databases',
@@ -20,7 +20,7 @@ const Skills = () => {
     },
     {
       title: 'AI/ML',
-      skills: ['GPT-3.5 Turbo', 'RAG', 'Generative AI']
+      skills: ['RAG', 'Generative AI', "MCP"]
     },
     {
       title: 'Integration & APIs',

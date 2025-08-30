@@ -12,46 +12,16 @@ const Projects = () => {
       sourceLink: 'https://github.com/Vrushi007/regulatory-intelligence',
       featured: true
     },
-    // {
-    //   title: 'AI-Powered Clinical Study Chatbot',
-    //   description: 'Developed an intelligent chatbot platform using OpenAI GPT-3.5 for clinical study management. Features automated query responses, study protocol explanations, and real-time assistance for research teams.',
-    //   tags: ['React', 'Python', 'OpenAI GPT-3.5', 'Flask', 'Azure'],
-    //   icon: 'fas fa-robot',
-    //   gradient: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
-    //   demoLink: '#',
-    //   sourceLink: 'https://github.com/Vrushi007',
-    //   featured: true
-    // },
-    // {
-    //   title: 'Clinical Data Management System',
-    //   description: 'Built a comprehensive web application for managing clinical trial data with real-time dashboards, automated reporting, and regulatory compliance features. Improved data processing efficiency by 40%.',
-    //   tags: ['React', '.NET Core', 'SQL Server', 'Azure', 'Power BI'],
-    //   icon: 'fas fa-chart-line',
-    //   gradient: 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)',
-    //   demoLink: '#',
-    //   sourceLink: 'https://github.com/Vrushi007',
-    //   featured: true
-    // },
-    // {
-    //   title: 'Automated Study Site Management Portal',
-    //   description: 'Created a multi-tenant SaaS platform for managing clinical study sites with role-based access, document management, and automated workflow orchestration.',
-    //   tags: ['Angular', 'ASP.NET Core', 'Entity Framework', 'Docker'],
-    //   icon: 'fas fa-hospital',
-    //   gradient: 'linear-gradient(135deg, #fa709a 0%, #fee140 100%)',
-    //   demoLink: '#',
-    //   sourceLink: 'https://github.com/Vrushi007',
-    //   featured: false
-    // },
-    // {
-    //   title: 'Real-time Analytics Dashboard',
-    //   description: 'Developed interactive dashboards for clinical trial monitoring with real-time data visualization, predictive analytics, and automated alerting systems.',
-    //   tags: ['D3.js', 'Python', 'FastAPI', 'PostgreSQL', 'Redis'],
-    //   icon: 'fas fa-analytics',
-    //   gradient: 'linear-gradient(135deg, #a8edea 0%, #fed6e3 100%)',
-    //   demoLink: '#',
-    //   sourceLink: 'https://github.com/Vrushi007',
-    //   featured: false
-    // },
+    {
+      title: 'FDA Data Retriever MCP Server',
+      description: 'Comprehensive Model Context Protocol server providing access to 8 major FDA device databases with 16 specialized tools. Enables fetching and analysis of FDA device data including 510(k) clearances, device classifications, pre-market approvals, recalls, and adverse events.',
+      tags: ['Python', 'MCP', 'FDA APIs', 'Healthcare Data', 'Async HTTP', 'Data Analytics'],
+      icon: 'fas fa-database',
+      gradient: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
+      demoLink: '#',
+      sourceLink: 'https://github.com/Vrushi007/fda-data-retriever',
+      featured: true
+    },
     {
       title: 'Personal Portfolio Website',
       description: 'Modern, responsive portfolio website built with React and Vite. Features smooth animations, dark/light mode toggle, and optimized performance.',

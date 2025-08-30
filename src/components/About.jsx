@@ -1,6 +1,20 @@
 import React from 'react'
 
 const About = () => {
+  const downloadResume = () => {
+    // Create a temporary link element
+    const link = document.createElement('a');
+    link.href = '/resume/resume.pdf'; // Adjust path as needed
+    link.download = 'Vrushabh_Rajaghatta_Resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
+  const printResume = () => {
+    window.print();
+  };
+
   return (
     <section id="about" className="section">
       <div className="container">
@@ -10,6 +24,16 @@ const About = () => {
             <p>Senior Software Developer with over 7 years of experience in full-stack development, specializing in ReactJS, .NET, and Python ecosystems. I build enterprise-grade applications that combine scalability, security, and exceptional user experience.</p>
             <p>My expertise spans developing AI-powered solutions using GPT models, creating real-time data processing systems with Apache Kafka, and deploying cloud-native applications on Azure. I excel at API development, system integration, and cross-functional collaboration to deliver high-impact software solutions.</p>
             <p>Passionate about clean code, performance optimization, and staying at the forefront of emerging technologies to solve complex business challenges.</p>
+            
+            <div className="download-buttons">
+              <button onClick={downloadResume} className="btn btn-primary">
+                <i className="fas fa-download"></i> Download Resume
+              </button>
+              <button onClick={printResume} className="btn btn-secondary">
+                <i className="fas fa-print"></i> Print Resume
+              </button>
+            </div>
+
             <div className="about-details">
               <div className="detail"><strong>Name:</strong> Vrushabh Rajaghatta</div>
               <div className="detail"><strong>Email:</strong> <a href="mailto:vrishabhrajaghatta@gmail.com">vrishabhrajaghatta@gmail.com</a></div>
@@ -18,7 +42,7 @@ const About = () => {
             </div>
           </div>
           <div className="about-image">
-            <img src="/images/profile.jpeg" alt="Vrushabh Rajaghatta" className="profile-image" />
+            <img src="/resume/images/profile.jpeg" alt="Vrushabh Rajaghatta" className="profile-image" />
           </div>
         </div>
       </div>

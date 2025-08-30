@@ -1,7 +1,8 @@
 import React from 'react'
 import './App.css'
+import './styles/dark-mode.css'
+import './styles/animations.css'
 import Navbar from './components/Navbar'
-import Hero from './components/Hero'
 import About from './components/About'
 import Skills from './components/Skills'
 import Experience from './components/Experience'
@@ -15,7 +16,6 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <Hero />
       <About />
       <Skills />
       <Experience />

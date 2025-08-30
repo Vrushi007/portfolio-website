@@ -8,8 +8,12 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
     "preview": "vite preview",
-    "deploy": "gh-pages -d dist"
+    "deploy": "npm run build && gh-pages -d dist",
+    "type-check": "tsc --noEmit",
+    "analyze": "npm run build -- --analyze",
+    "serve": "vite preview --port 3000"
   },
   "dependencies": {
     "react": "^19.1.0",
