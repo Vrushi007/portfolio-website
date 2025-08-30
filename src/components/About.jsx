@@ -42,7 +42,7 @@ const About = () => {
             </div>
           </div>
           <div className="about-image">
-            <img src="/resume/images/profile.jpeg" alt="Vrushabh Rajaghatta" className="profile-image" />
+            <img src="/portfolio-website/images/profile.jpeg" alt="Vrushabh Rajaghatta" className="profile-image" />
           </div>
         </div>
       </div>
