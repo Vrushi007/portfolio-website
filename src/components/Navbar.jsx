@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import ThemeToggle from './ThemeToggle'
 
 const Navbar = () => {
   const [activeSection, setActiveSection] = useState('about')
@@ -43,12 +44,14 @@ const Navbar = () => {
 
   return (
     <nav id="navbar" style={{ padding: isScrolled ? '0.5rem 0' : '1rem 0' }}>
-      <div className="container">
-        <h1 className="logo">
-          <a href="#about" onClick={(e) => { e.preventDefault(); handleNavClick('about') }}>
-            Vrushabh Rajaghatta
-          </a>
-        </h1>
+      <div className="container navbar-flex">
+        <div className="navbar-left">
+          <h1 className="logo">
+            <a href="#about" onClick={(e) => { e.preventDefault(); handleNavClick('about') }}>
+              Vrushabh Rajaghatta
+            </a>
+          </h1>
+        </div>
         <ul>
           {['about', 'skills', 'experience', 'projects', 'certifications', 'contact'].map((section) => (
             <li key={section}>
@@ -62,6 +65,9 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
+        <div className="navbar-theme-toggle">
+          <ThemeToggle />
+        </div>
       </div>
     </nav>
   )

@@ -3,6 +3,12 @@ import React from 'react'
 const Contact = () => {
   const contactItems = [
     {
+      icon: 'fas fa-phone',
+      title: 'Phone',
+      content: '+91 9591085366',
+      link: 'tel:+919591085366'
+    },
+    {
       icon: 'fas fa-envelope',
       title: 'Email',
       content: 'vrishabhrajaghatta@gmail.com',
@@ -26,20 +32,21 @@ const Contact = () => {
     <section id="contact" className="section bg-light">
       <div className="container">
         <h2 className="section-title">Get In Touch</h2>
-        <div className="contact-content">
-          <div className="contact-info">
-            {contactItems.map((item, index) => (
-              <div key={index} className="contact-item">
+        <div className="contact-grid">
+          {contactItems.map((item, index) => (
+            <div key={index} className="contact-card">
+              <a
+                href={item.link}
+                target={item.link.startsWith('http') ? '_blank' : '_self'}
+                rel="noopener noreferrer"
+                className={`contact-icon contact-icon-${item.title.toLowerCase()}`}
+                title={item.title}
+                aria-label={item.title}
+              >
                 <i className={item.icon}></i>
-                <h3>{item.title}</h3>
-                <p>
-                  <a href={item.link} target={item.link.startsWith('http') ? '_blank' : '_self'} rel="noopener noreferrer">
-                    {item.content}
-                  </a>
-                </p>
-              </div>
-            ))}
-          </div>
+              </a>
+            </div>
+          ))}
         </div>
       </div>
     </section>

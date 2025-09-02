@@ -3,6 +3,7 @@ import './App.css'
 import './styles/dark-mode.css'
 import './styles/animations.css'
 import Navbar from './components/Navbar'
+import Analytics from './components/Analytics'
 import About from './components/About'
 import Skills from './components/Skills'
 import Experience from './components/Experience'
@@ -15,6 +16,7 @@ import Footer from './components/Footer'
 function App() {
   return (
     <div className="App">
+      <Analytics />
       <Navbar />
       <About />
       <Skills />

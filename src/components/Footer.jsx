@@ -1,47 +1,9 @@
 import React from 'react'
-import ThemeToggle from './ThemeToggle'
 
-const Footer = () => {
-  const socialLinks = [
-    {
-      href: 'https://www.linkedin.com/in/vrushabh-rajaghatta',
-      icon: 'fab fa-linkedin'
-    },
-    {
-      href: 'https://github.com/Vrushi007',
-      icon: 'fab fa-github'
-    }
-  ]
-
-  return (
-    <footer id="footer">
-      <div className="container">
-        <div className="footer-content">
-          <div className="social-links">
-            {socialLinks.map((link, index) => (
-              <a 
-                key={index}
-                href={link.href} 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="social-link"
-              >
-                <i className={link.icon}></i>
-              </a>
-            ))}
-          </div>
-          
-          <div className="footer-theme-toggle">
-            <ThemeToggle />
-          </div>
-        </div>
-        
-        <div className="copyright">
-          <p>&copy; 2025 Vrushabh Rajaghatta. All Rights Reserved.</p>
-        </div>
-      </div>
-    </footer>
-  )
-}
+const Footer = () => (
+  <footer id="footer">
+    <p>&copy; 2025 Vrushabh Rajaghatta. All Rights Reserved.</p>
+  </footer>
+)
 
 export default Footer
